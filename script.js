@@ -10,7 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
         const maxX = window.innerWidth - quadrado.clientWidth;
         const maxY = window.innerHeight - quadrado.clientHeight;
 
-        const novoX = Math.floor(Math.random() * maxX);
+        const novoX = Math.floor(Math.random() * maxX)
+        function pararContador() {
+            clearInterval(contadorInterval);
+        }
+    ;
         const novoY = Math.floor(Math.random() * maxY);
 
         quadrado.style.transform = `translate(${novoX}px, ${novoY}px)`;
@@ -29,11 +33,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     quadrado.addEventListener("mouseover", function() {
         iniciarContador();
+        function pararContador() {
+            clearInterval(contadorInterval);
+        }
+    
         movimentoInterval = setInterval(moverQuadrado, 3000); // Movimento a cada 500 milissegundos (0.5 segundos)
     });
 
     quadrado.addEventListener("mouseout", function() {
         pararContador();
+        function pararContador() {
+            clearInterval(contadorInterval);
+        }
+    
         clearInterval(movimentoInterval);
     });
 
