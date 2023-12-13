@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function iniciarContador() {
         contadorInterval = setInterval(function() {
-            tempoMouseDentro += 100; // Incrementa a contagem em 100 milissegundos
+            tempoMouseDentro += 100; 
             contadorElement.innerText = `Tempo: ${tempoMouseDentro / 100}s`;
         }, 100);
     }
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     quadrado.addEventListener("mouseover", function() {
         iniciarContador();
-        movimentoInterval = setInterval(moverQuadrado, 1000); // Movimento a cada 500 milissegundos (0.5 segundos)
+        movimentoInterval = setInterval(moverQuadrado, 3000); // Movimento a cada 500 milissegundos (0.5 segundos)
     });
 
     quadrado.addEventListener("mouseout", function() {
