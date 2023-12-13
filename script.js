@@ -10,11 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const maxX = window.innerWidth - quadrado.clientWidth;
         const maxY = window.innerHeight - quadrado.clientHeight;
 
-        const novoX = Math.floor(Math.random() * maxX)
-        function pararContador() {
-            clearInterval(contadorInterval);
-        }
-    ;
+        const novoX = Math.floor(Math.random() * maxX);
         const novoY = Math.floor(Math.random() * maxY);
 
         quadrado.style.transform = `translate(${novoX}px, ${novoY}px)`;
