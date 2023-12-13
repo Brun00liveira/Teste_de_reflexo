@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let contadorInterval;
 
     function moverQuadrado() {
-        const maxX = window.innerWidth - quadrado.clientWidth;
+        const mafxX = window.innerWidth - quadrado.clientWidth;
         const maxY = window.innerHeight - quadrado.clientHeight;
 
         const novoX = Math.floor(Math.random() * maxX);
