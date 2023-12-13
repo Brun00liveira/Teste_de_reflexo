@@ -29,10 +29,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     quadrado.addEventListener("mouseover", function() {
         iniciarContador();
-        function pararContador() {
-            clearInterval(contadorInterval);
-        }
-    
         movimentoInterval = setInterval(moverQuadrado, 3000); // Movimento a cada 500 milissegundos (0.5 segundos)
     });
 
