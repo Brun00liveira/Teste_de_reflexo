@@ -38,10 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     quadrado.addEventListener("mouseout", function() {
         pararContador();
-        function pararContador() {
-            clearInterval(contadorInterval);
-        }
-    
+        
         clearInterval(movimentoInterval);
     });
 
